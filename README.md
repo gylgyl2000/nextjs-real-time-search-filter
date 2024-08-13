@@ -1,3 +1,12 @@
+Filtre de recherche en temps réel dans Next.js
+
+[nextjs-functional-search-bar](https://gylgyl2000.github.io/nextjs-real-time-search-filter/)
+
+- Next 14
+- React 18
+- TypeScript 5
+- Tailwindcss 3
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
