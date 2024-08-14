@@ -1,37 +1,16 @@
 'use client'
 
-import { useState, useEffect } from "react"
 import { ProfileCard } from "@/components/ProfileCard"
 import { SearchInput } from "@/components/SearchInput"
-import { Users } from "@/lib/users"
 import { useSearchParams } from 'next/navigation'
+import { filteredUsers } from "@/lib/data"
 
 const UsersPage = () => {
-    // const [userProfileData, setUserProfileData] = useState<UserProfile[]>([])
     const searchParams = useSearchParams()
     const searchQuery = searchParams && searchParams.get("search")
 
-    // useEffect(() => {
-        // const handleSearch = () => {
-            const findUser = Users.filter((user) => {
-                if (searchQuery) {
-                    return (
-                        user.identification.full_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                        user.employment.occupation.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                        user.online_presence.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                        user.contact_information.email_address.toLowerCase().includes(searchQuery.toLowerCase())
-                    );
-                } else {
-                    return true;
-                }
-            });
-            // setUserProfileData(findUser);
-        // };
-        // handleSearch();
-    // }, [searchQuery]);
-
-//   const totalUsers = userProfileData.length
-  const totalUsers = findUser.length
+    const findUser = filteredUsers(searchQuery)
+    const totalUsers = findUser.length
 
   return (
     <section className="h-[100vh] w-screen px-[2rem] md:px-[6rem] mt-[100px]">

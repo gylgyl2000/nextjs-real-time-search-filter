@@ -25,7 +25,7 @@ export const SearchInput = () => {
                 placeholder="Entrez un mot-clé"
                 defaultValue={searchParams.get('search')?.toString()}
                 onChange={(e) => {handleChange(e.target.value)}}
-                className="bg-[transparent] outline-none border-none w-full py-3 pl-2 pr-3" />
+                className="peer bg-[transparent] outline-none border-none w-full py-3 pl-2 pr-3" />
         </div>
     )
 }
