@@ -20,12 +20,13 @@ export const SearchInput = () => {
     return (
         <div className="search__input border-[2px] border-solid border-slate-500 flex flex-row items-center gap-5 p-1 rounded-[15px]">
             <label htmlFor="inputId" className="size-6 text-slate-500"><MagnifyingGlassIcon /></label>
-            <input type="text"
+            <input
                 id="inputId"
                 placeholder="Entrez un mot-clé"
                 defaultValue={searchParams.get('search')?.toString()}
                 onChange={(e) => {handleChange(e.target.value)}}
-                className="peer bg-[transparent] outline-none border-none w-full py-3 pl-2 pr-3" />
+                className="peer bg-[transparent] outline-none border-none w-full py-3 pl-2 pr-3"
+            />
         </div>
     )
 }
