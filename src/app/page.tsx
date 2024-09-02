@@ -1,4 +1,4 @@
-import UsersPage from '@/app/users/page'
+import UsersPage from '@/app/users/page2'
 import { Suspense } from 'react'
 
 export default function Home() {

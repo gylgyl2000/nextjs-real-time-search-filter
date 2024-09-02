@@ -7,12 +7,12 @@ import { filteredUsers } from "@/lib/data"
 import { Suspense } from "react"
 
 export default function UsersPage(
-    { searchParams }: Readonly<SearchParamsProps>
+    // { searchParams }: Readonly<SearchParamsProps>
 ) {
-    // const searchParams = useSearchParams()
+    const searchParams = useSearchParams()
     console.log(searchParams)
-    const searchQuery = searchParams?.search ?? ''
-    // const searchQuery = searchParams.get('search')
+    // const searchQuery = searchParams?.search ?? ''
+    const searchQuery = searchParams.get('search') || ''
     console.log(searchQuery)
 
     const findUser = filteredUsers(searchQuery)
