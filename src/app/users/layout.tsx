@@ -7,9 +7,9 @@ export default function UsersLayout({
 }) {
     return (
         <section>
-            <Suspense>
+            {/* <Suspense> */}
                 {children}
-            </Suspense>
+            {/* </Suspense> */}
         </section>
     )
 }
