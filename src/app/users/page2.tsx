@@ -21,7 +21,7 @@ export default function UsersPage(
   return (
     <section className="h-[100vh] w-screen px-[2rem] md:px-[6rem] mt-[100px]">
         <SearchInput />
-        {/* <Suspense> */}
+        <Suspense fallback={<h2>🌀 Chargement...</h2>}>
         <p className="mb-10 ">Affichage de {totalUsers} {totalUsers > 1 ? "utilisateurs" : "utilisateur"}</p>
         <div className="mt-8">
             {totalUsers === 0 ? <p>Aucun résultat</p> : (
@@ -41,7 +41,7 @@ export default function UsersPage(
                 </div>
             )}
         </div>
-        {/* </Suspense> */}
+        </Suspense>
     </section>
   )
 }

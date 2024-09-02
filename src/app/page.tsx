@@ -4,10 +4,10 @@ import { Suspense } from 'react'
 export default function Home() {
 
     return (
-        <Suspense fallback={<h2>🌀 Chargement...</h2>}>
+        // <Suspense fallback={<h2>🌀 Chargement...</h2>}>
             <UsersPage
                 // searchParams={{ search: '' }}
             />
-        </Suspense>
+        // </Suspense>
     )
 }
