@@ -5,7 +5,9 @@ export default function Home() {
 
     return (
         <Suspense fallback={<h2>🌀 Chargement...</h2>}>
-            <UsersPage />
+            <UsersPage
+                // searchParams={{ search: '' }}
+            />
         </Suspense>
     )
 }

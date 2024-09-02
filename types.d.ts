@@ -63,3 +63,8 @@ interface UserProfileCard {
 interface iDefault {
     defaultValue: string | null
 }
+interface SearchParamsProps {
+    searchParams: {
+        search: string
+    };
+}

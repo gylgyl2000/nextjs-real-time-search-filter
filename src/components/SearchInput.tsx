@@ -9,10 +9,10 @@ export default function SearchInput() {
     const { replace } = useRouter();
     const pathname = usePathname();
     
-    const params = new URLSearchParams(searchParams)
     
     const handleChange = useDebouncedCallback((term: string) => {
         console.log(`Searching... ${term}`)
+        const params = new URLSearchParams(searchParams)
         if (term) {
             params.set('search', term);
           } else {
