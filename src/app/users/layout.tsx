@@ -6,6 +6,10 @@ export default function UsersLayout({
     children: React.ReactNode
 }) {
     return (
-        <section> {children}</section>
+        <section>
+            <Suspense>
+                {children}
+            </Suspense>
+        </section>
     )
 }
