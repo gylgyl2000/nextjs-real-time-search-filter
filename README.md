@@ -1,6 +1,6 @@
 Filtre de recherche en temps réel dans Next.js
 
-[nextjs-functional-search-bar](https://gylgyl2000.github.io/nextjs-real-time-search-filter/)
+[nextjs-real-time-search-filter](https://gylgyl2000.github.io/nextjs-real-time-search-filter/)
 
 - Next 14
 - React 18
